@@ -58,21 +58,49 @@
             font-size: 0.8rem;
             font-weight: bold;
         }
-        /* Video Player Container */
-        .video-container {
-            position: relative;
-  width: 100%;
-  aspect-ratio: 16 / 9;
-  overflow: hidden;
-  background: #000;
-  border-radius: 12px;
-        }
-        .video-container iframe {
-            width: 100%;
-  height: 100%;
-  border: none;
-  display: block;
-        }
+        /* Video Player Container - Mobile Friendly Fix */
+.video-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* Yeh 16:9 ratio maintain karega */
+    height: 0;
+    overflow: hidden;
+    background: #000;
+    border-radius: 12px;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    display: block;
+}
+
+/* Mobile Screens ke liye special settings */
+@media (max-width: 600px) {
+    .container {
+        padding: 0 10px;
+        margin: 20px auto;
+    }
+    
+    .movie-card {
+        padding: 10px; /* Mobile par padding kam ki hai taaki video bada dikhe */
+    }
+    
+    .header h1 {
+        font-size: 1.8rem; /* Font thoda chota kiya mobile ke liye */
+    }
+    
+    .movie-title {
+        font-size: 1.2rem;
+        flex-direction: column; /* Phone par title aur badge ko upar-neeche kar dega */
+        gap: 10px;
+        text-align: center;
+    }
+}
         .message-box {
             margin-top: 30px;
             padding: 20px;
