@@ -1,154 +1,170 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hi">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Movie Date with Radhe Ji ❤️</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-        body {
-            background-color: #0b0b0f;
-            color: #ffffff;
-        }
-        .header {
-            text-align: center;
-            padding: 30px 20px;
-            background: linear-gradient(to bottom, #1a1a24, #0b0b0f);
-            border-bottom: 2px solid #ff1744;
-        }
-        .header h1 {
-            font-size: 2.2rem;
-            color: #ff1744;
-            margin-bottom: 10px;
-            letter-spacing: 1px;
-        }
-        .header p {
-            color: #a5a5b0;
-            font-size: 1.1rem;
-            font-style: italic;
-        }
-        .container {
-            max-width: 1000px;
-            margin: 40px auto;
-            padding: 0 20px;
-        }
-        .movie-card {
-            background-color: #15151c;
-            border-radius: 15px;
-            padding: 20px;
-            box-shadow: 0 10px 30px rgba(255, 23, 68, 0.1);
-        }
-        .movie-title {
-            font-size: 1.5rem;
-            margin-bottom: 15px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        .badge {
-            background-color: #ff1744;
-            color: white;
-            padding: 5px 12px;
-            border-radius: 20px;
-            font-size: 0.8rem;
-            font-weight: bold;
-        }
-        /* Naya Video Player Container CSS */
-.video-container {
-    width: 100%;
-    aspect-ratio: 16 / 9; /* Modern aspect ratio */
-    min-height: 250px; /* Drive player ko space dene ke liye */
-    background: #000;
-    border-radius: 12px;
-    overflow: hidden;
-    display: flex;
-}
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movie Night ♡</title>
 
-.video-container iframe {
-    width: 100%;
-    height: 100%;
-    border: none;
-}
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
 
-/* Mobile Screens ke liye */
-@media (max-width: 600px) {
-    .container {
-        padding: 0 15px;
-        margin: 20px auto;
+  <style>
+    * {
+      box-sizing: border-box;
     }
-    
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: "DM Sans", sans-serif;
+      color: #5e4c61;
+      background: linear-gradient(145deg, #fff7f1, #fff2f6 52%, #f4efff);
+    }
+
+    .phone {
+      width: min(100%, 430px);
+      min-height: 100vh;
+      margin: auto;
+      padding: 28px 18px 35px;
+      text-align: center;
+    }
+
+    .small-title {
+      margin: 0 0 8px;
+      color: #be788b;
+      font-size: 11px;
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
+
+    h1 {
+      margin: 0;
+      color: #754f65;
+      font-family: "Playfair Display", serif;
+      font-style: italic;
+      font-size: 35px;
+    }
+
+    .subtitle {
+      margin: 10px 0 25px;
+      color: #856f87;
+      font-size: 14px;
+    }
+
     .movie-card {
-        padding: 15px; 
-    }
-    
-    .header h1 {
-        font-size: 1.8rem;
-    }
-    
-    .movie-title {
-        font-size: 1.2rem;
-        flex-direction: column; 
-        gap: 12px;
-        text-align: center;
+      padding: 12px;
+      border: 1px solid white;
+      border-radius: 25px;
+      background: rgba(255, 255, 255, 0.75);
+      box-shadow: 0 14px 35px rgba(181, 122, 149, 0.15);
     }
 
-    .video-container {
-        min-height: 220px; /* Mobile par video height fix karega */
-    }
+    .phone {
+  width: min(100%, 600px);
+  min-height: 100vh;
+  margin: auto;
+  padding: 28px 18px 35px;
+  text-align: center;
 }
-        .message-box {
-            margin-top: 30px;
-            padding: 20px;
-            background-color: rgba(255, 23, 68, 0.05);
-            border-left: 4px solid #ff1744;
-            border-radius: 5px;
-        }
-        .message-box h3 {
-            margin-bottom: 10px;
-            color: #04bcbc;
-        }
-        .message-box p {
-            color: #fcfcfc;
-            line-height: 1.6;
-        }
-        
-    </style>
+
+.video-wrap {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border-radius: 17px;
+  background: black;
+}
+
+iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  display: block;
+}
+    }
+
+    .details {
+      padding: 17px 6px 6px;
+      text-align: left;
+    }
+
+    .tag {
+      display: inline-block;
+      padding: 5px 10px;
+      border-radius: 50px;
+      color: #a75e75;
+      background: #fff1f4;
+      font-size: 11px;
+      font-weight: bold;
+    }
+
+    h2 {
+      margin: 11px 0 7px;
+      font-size: 23px;
+    }
+
+    .description {
+      margin: 0;
+      color: #856f87;
+      font-size: 13px;
+      line-height: 1.6;
+    }
+
+    .note {
+      margin-top: 22px;
+      padding: 16px;
+      border-radius: 18px;
+      text-align: left;
+      background: #eee8ff;
+      color: #745e7d;
+      font-size: 13px;
+      line-height: 1.6;
+    }
+
+    .footer {
+      margin-top: 25px;
+      color: #b07d91;
+      font-size: 13px;
+    }
+
+    .heart {
+      color: #e986a3;
+      font-size: 18px;
+    }
+  </style>
 </head>
+
 <body>
+  <main class="phone">
+    <p class="small-title">OUR LITTLE CINEMA</p>
+    <h1>Special movie night, just for you Radhe Ji ♡</h1>
+    <p class="subtitle">Aaj ki movie, sirf aapke liye.</p>
 
-    <div class="header">
-        <h1>Private Theater 🎬</h1>
-        <p>A special movie night, just for you Radhe Ji ❤️</p>
-    </div>
+    <section class="movie-card">
+      <div class="video-wrap">
+        <!-- FILE_ID ko apni Google Drive file ID se replace karo -->
+        <iframe
+          src="https://drive.google.com/file/d/1BJXY5LhLAulibJdAISkLc0Qf6brevhTj/preview"
+          allow="autoplay; fullscreen"
+          allowfullscreen>
+        </iframe>
+      </div>
 
-    <div class="container">
-        <div class="movie-card">
-            <div class="movie-title">
-                <!-- Yahan apni Movie ka naam likho -->
-                <span>Today's Special Movie</span> 
-                <span class="badge">HD Stream</span>
-            </div>
+      <div class="details">
+        <span class="tag">TONIGHT'S PICK</span>
+        <h2>💌 A message for you</h2>
+        <p class="description">
+          I hope you enjoy this movie! Popcorn le aana, aur aaram se dekhna. Aapka Graphic Designer & Developer hamesha tumhare liye nayi cheezein banata rahega! Enjoy the show!...♡
+        </p>
+      </div>
+    </section>
 
-<div class="video-container">
-  <iframe
-    src="https://drive.google.com/file/d/1BJXY5LhLAulibJdAISkLc0Qf6brevhTj/preview"
-    allow="autoplay; fullscreen"
-    allowfullscreen>
-  </iframe>
-</div>
-            
-        </div>
+    
 
-        <div class="message-box">
-            <h3>💌 A message for you</h3>
-            <p>I hope you enjoy this movie! Popcorn le aana, aur aaram se dekhna. Tumhara Graphic Designer & Developer hamesha tumhare liye nayi cheezein banata rahega! Enjoy the show! ✨</p>
-        </div>
-    </div>
-
+    <p class="footer">
+      Made with <span class="heart">♥</span> for our cozy nights
+    </p>
+  </main>
 </body>
 </html>
